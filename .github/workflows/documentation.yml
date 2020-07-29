@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Generate Documentation
-        run: "mkdir Documentation && echo <h1>hello</h1> > Documentation/index.html"
+        run: "mkdir Documentation && echo '<h1>hello</h1>' > Documentation/index.html"
         #uses: SwiftDocOrg/swift-doc@master
         #with:
         #  inputs: Sources/CasePaths
