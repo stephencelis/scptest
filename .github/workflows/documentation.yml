@@ -12,6 +12,7 @@ jobs:
       - name: Generate Documentation
         uses: SwiftDocOrg/swift-doc@master
         with:
+          base-url: /scptest/
           inputs: Sources/CasePaths
           module-name: CasePaths
           format: html
