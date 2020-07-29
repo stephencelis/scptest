@@ -16,8 +16,10 @@ jobs:
           module-name: CasePaths
           format: html
           output: Documentation
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v2
+      - name: Update Permissions
+        run: 'sudo chown --recursive $USER Documentation'
+      #- name: Setup tmate session
+      #  uses: mxschmitt/action-tmate@v2
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
