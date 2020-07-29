@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CasePaths - CasePath</title>
-    <link rel="stylesheet" type="text/css" href="./all.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/scptest/all.css" media="all" />
 </head>
 <body>
     <header>
-        <a href="./">
+        <a href="/scptest/">
             <strong>
                 CasePaths
             </strong>
@@ -166,7 +166,7 @@ value.</p>
     <h3>
         <code>appending(path:​)</code>
     </h3>
-    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">appending</span>&lt;<span class="variable">AppendedValue</span>&gt;(<span class="variable">path</span>: <a href="./CasePath"><span class="type">CasePath</span></a>&lt;<span class="type">Value</span>, <span class="type">AppendedValue</span>&gt;) -&gt; <a href="./CasePath"><span class="type">CasePath</span></a>&lt;
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">appending</span>&lt;<span class="variable">AppendedValue</span>&gt;(<span class="variable">path</span>: <a href="/scptest/CasePath"><span class="type">CasePath</span></a>&lt;<span class="type">Value</span>, <span class="type">AppendedValue</span>&gt;) -&gt; <a href="/scptest/CasePath"><span class="type">CasePath</span></a>&lt;
     <span class="type">Root</span>, <span class="type">AppendedValue</span>
   &gt;</code></pre></body></html>
 <div class="summary" role="doc-abstract">
@@ -206,7 +206,7 @@ value.</p>
     <h3>
         <code>`case`(_:​)</code>
     </h3>
-    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">func</span> <span class="function">`case`</span>(<span class="keyword">_</span> <span class="variable">embed</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="type">Value</span>) -&gt; <span class="type">Root</span>) -&gt; <a href="./CasePath"><span class="type">CasePath</span></a></code></pre></body></html>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">func</span> <span class="function">`case`</span>(<span class="keyword">_</span> <span class="variable">embed</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="type">Value</span>) -&gt; <span class="type">Root</span>) -&gt; <a href="/scptest/CasePath"><span class="type">CasePath</span></a></code></pre></body></html>
 <div class="summary" role="doc-abstract">
     <p>Returns a case path that extracts values associated with a given enum case initializer.</p>
 
@@ -246,7 +246,7 @@ value.</p>
     <h3>
         <code>.​.​(lhs:​rhs:​)</code>
     </h3>
-    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">func</span> ..&lt;<span class="variable">AppendedValue</span>&gt;(<span class="variable">lhs</span>: <a href="./CasePath"><span class="type">CasePath</span></a>, <span class="variable">rhs</span>: <a href="./CasePath"><span class="type">CasePath</span></a>&lt;<span class="type">Value</span>, <span class="type">AppendedValue</span>&gt;) -&gt; <a href="./CasePath"><span class="type">CasePath</span></a>&lt;<span class="type">Root</span>, <span class="type">AppendedValue</span>&gt;</code></pre></body></html>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">func</span> ..&lt;<span class="variable">AppendedValue</span>&gt;(<span class="variable">lhs</span>: <a href="/scptest/CasePath"><span class="type">CasePath</span></a>, <span class="variable">rhs</span>: <a href="/scptest/CasePath"><span class="type">CasePath</span></a>&lt;<span class="type">Value</span>, <span class="type">AppendedValue</span>&gt;) -&gt; <a href="/scptest/CasePath"><span class="type">CasePath</span></a>&lt;<span class="type">Root</span>, <span class="type">AppendedValue</span>&gt;</code></pre></body></html>
 <div class="summary" role="doc-abstract">
     <p>Returns a new case path created by appending the given case path to this one.</p>
 
@@ -293,7 +293,7 @@ to the value type of another case path.</p>
     <h3>
         <code>.​.​(lhs:​rhs:​)</code>
     </h3>
-    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">func</span> ..&lt;<span class="variable">AppendedValue</span>&gt;(<span class="variable">lhs</span>: <a href="./CasePath"><span class="type">CasePath</span></a>, <span class="variable">rhs</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="type">AppendedValue</span>) -&gt; <span class="type">Value</span>) -&gt; <a href="./CasePath"><span class="type">CasePath</span></a>&lt;<span class="type">Root</span>, <span class="type">AppendedValue</span>&gt;</code></pre></body></html>
+    <html><body><pre class="highlight"><code><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">func</span> ..&lt;<span class="variable">AppendedValue</span>&gt;(<span class="variable">lhs</span>: <a href="/scptest/CasePath"><span class="type">CasePath</span></a>, <span class="variable">rhs</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="type">AppendedValue</span>) -&gt; <span class="type">Value</span>) -&gt; <a href="/scptest/CasePath"><span class="type">CasePath</span></a>&lt;<span class="type">Root</span>, <span class="type">AppendedValue</span>&gt;</code></pre></body></html>
 <div class="summary" role="doc-abstract">
     <p>Returns a new case path created by appending the given embed function.</p>
 
@@ -340,7 +340,7 @@ to the value type of another case path.</p>
 
     <footer>
         <p>
-    Generated on <time datetime="2020-07-29T14:34:48+0000">July 29, 2020</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-beta.3</span>.
+    Generated on <time datetime="2020-07-29T14:47:59+0000">July 29, 2020</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-beta.3</span>.
 </p>
     </footer>
 </body>
